@@ -29,7 +29,7 @@ body{
     
 }
 .main{
-    height:400px;
+    height:300px;
     /* background-color: rgb(101, 80, 105); */
     background-color: #1a1a2e;
     margin-bottom: 0;
@@ -47,6 +47,8 @@ body{
     background-color: red;
     margin-left: 0px;
     padding-left: 0px;
+    /* margin-top: 0px; */
+    /* padding-top: 0px; */
 }
 #player2img{
     height: 200px;
@@ -61,16 +63,17 @@ body{
 .main {
     display: flex;          /* Activates Flexbox layout */
     justify-content: center; /* Centers the boxes horizontally in the website */
-    align-items: center;     /* Centers the boxes vertically (if .main has height) */
-    gap: 40px;               /* Controls the spacing/gap between the two boxes */
+    align-items: center;   /* Centers the boxes vertically (if .main has height)*/
+     gap: 50px;            /*   Controls the spacing/gap between the two boxes */
     padding: 20px;          /* Optional: Adds space around the container */
     padding-top: 0px;     /* Optional: Adds extra space at the top */
-    padding-top: 0;
     margin-top:0;
 }
 
 /* Styling for both player boxes */
 .playersimg {
+    /* padding-top: 0px; */
+    margin-top: 0;
     width: 200px;           /* Exact width requested */
     height: 200px;          /* Exact height requested */
     border: 2px solid white; /* Optional: Adds a border so you can see the box boundaries */
@@ -80,13 +83,15 @@ body{
 
 /* Makes sure the images fit perfectly inside the 200x200 boxes */
 .playersimg img {
+    padding-top: 0px;           /* Removes any default padding around the image */
+    margin-top:0px;
     width: 100%;
     height: 100%;
     object-fit:fill;      /* Scales the image to fill the box while preserving aspect ratio */
 }
 
 .info{
-    /* height: 100px; */
+    height: 200px;
     margin: 0;
     padding: 0;
     /* background-color: rgb(101, 80, 105); */
@@ -94,4 +99,124 @@ body{
     margin-bottom: 0;
     padding-bottom: 0;
     color:rgb(230, 213, 213);
+}
+
+/* for bluring background image for better reliability */
+/* .back {
+    /* 1. Set your background image details */
+    /*background: url('bckdimg.png') no-repeat center center / cover;
+    min-height: 100vh;
+    width: 100%;*/
+
+    /* 2. Create a semi-transparent color overlay layer */
+    /*background-image: linear-gradient(rgba(0, 0, 0, 0.01), rgba(0, 0, 0, 0.01)), url('bckdimg.png');
+
+    /* 3. The trick: Blur everything behind the content layer inside this element */
+    /*backdrop-filter: blur(19px);
+    -webkit-backdrop-filter: blur(19px); /* Safari support */
+/*} */
+
+/* score board css */
+/*.scoreboard{
+    /* height: 100px; */
+    /* margin: 0; */
+    /* padding: 0; */
+    /* background-color: rgb(101, 80, 105); */
+    /* background-color: #1a1a2e;
+    margin-bottom: 0;
+    padding-bottom: 0;
+    color:rgb(230, 213, 213);
+    display: flex;          /* Activates Flexbox layout */
+    /* justify-content: center; Centers the boxes horizontally in the website */
+    /* align-items: center;   Centers the boxes vertically (if .main has height) */ */
+     /* gap: 50px;              Controls the spacing/gap between the two boxes */
+/* }*/ 
+
+.scoreboard{
+    background-color: #1a1a2e;
+    padding: 0;
+    margin: 0;
+    text-align: center;
+}
+hr{
+    padding: 0;
+    margin: 0;
+}
+.h3-row {
+    /* text-align: center; */
+    display: inline-block; /* Forces them to act like words on the same line */
+    justify-content: center;
+    margin:0;
+    padding:0;
+        /* Adds space between them */
+    vertical-align: center;   /* Keeps them perfectly level */
+}
+#username{
+    margin-left:10vh;
+}
+#comp{
+margin-left:20px;
+}
+
+
+ #userscore{ 
+    /* color:white;
+    padding-left:0;
+    padding-right:0;
+    margin-right:0;
+    margin-left:0;*/
+    color:white;
+    padding:0;
+    margin:0;
+    width:10px;
+    text-align: center;
+    display: inline-block; /* Forces them to act like words on the same line */
+    justify-content: center;
+    /* margin-right: 20px;   */
+ } 
+#compscore{
+    color:white;
+    /* padding-left:0; */
+    /* padding-right:0; */
+    padding:0;
+    width:10px;
+ /* margin-right:0; */
+    /* margin-left:0; */
+    margin:0;
+    text-align:center;
+    display: inline-block; /* Forces them to act like words on the same line */
+    justify-content: center;
+    /* margin-right: 20px;   */
+ } 
+
+ .score {
+    /* text-align: center; */
+    display: inline-block; /* Forces them to act like words on the same line */
+    justify-content: center;
+    margin:0;
+    padding:0;
+        /* Adds space between them */
+    vertical-align: center;   /* Keeps them perfectly level */
+}
+#userscore{
+    margin-left:23vw;
+    margin-right:150px;
+}
+.logic{
+    hieght:100px;
+    background-color: #1a1a2e;
+    text-align:center;
+}
+button{
+     display: inline-block;
+    padding: 10px 24px;
+    background-color: #0077B5;
+    color: #ffffff;
+    text-decoration: none;
+    border-radius: 6px;
+    font-weight: 600;
+    transition: background 0.1s ease;
+}
+button:hover {
+    background-color: #00598a;
 }
