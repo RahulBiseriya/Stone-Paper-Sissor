@@ -1,0 +1,97 @@
+body{
+    /* background: black; */
+    margin : 0;
+    margin-top: 0%;
+    padding: 0;
+}
+.nav{
+    margin-top: 0;
+    padding-top:10px;
+    height: 100px;
+   background-color:#1a1a2e;
+}
+/* #name{
+    /* margin-bottom: 0; */
+/* } */
+/* #foot{ */
+    /* margin-top: 0; */
+    /* margin-bottom: 10%; 
+/* } */
+#footer{
+    margin: top 100%;
+    padding-top: 5%;
+    /* background-color: rgb(63, 42, 67); */
+    background-color: #1a1a2e;
+    text-align: center;
+    margin-bottom: 0;
+    padding-bottom: 0px;
+    height: 230px;
+    
+}
+.main{
+    height:400px;
+    /* background-color: rgb(101, 80, 105); */
+    background-color: #1a1a2e;
+    margin-bottom: 0;
+    padding-bottom: 0;
+}
+
+.playersimg{
+    text-align: center;
+}
+#player1img{
+    height: 200px;
+    width: 200px;
+    padding-top: 0px;
+    /* margin: 50px; */
+    background-color: red;
+    margin-left: 0px;
+    padding-left: 0px;
+}
+#player2img{
+    height: 200px;
+    width: 200px;
+    padding-top:0px;
+    /* margin: 50px; */
+    background-color:blue;
+}
+
+
+/* Container holding both boxes */
+.main {
+    display: flex;          /* Activates Flexbox layout */
+    justify-content: center; /* Centers the boxes horizontally in the website */
+    align-items: center;     /* Centers the boxes vertically (if .main has height) */
+    gap: 40px;               /* Controls the spacing/gap between the two boxes */
+    padding: 20px;          /* Optional: Adds space around the container */
+    padding-top: 0px;     /* Optional: Adds extra space at the top */
+    padding-top: 0;
+    margin-top:0;
+}
+
+/* Styling for both player boxes */
+.playersimg {
+    width: 200px;           /* Exact width requested */
+    height: 200px;          /* Exact height requested */
+    border: 2px solid white; /* Optional: Adds a border so you can see the box boundaries */
+    border-radius: 10px;    /* Optional: Rounds the corners slightly */
+    overflow: hidden;       /* Prevents images from spilling outside the 200x200 box */
+}
+
+/* Makes sure the images fit perfectly inside the 200x200 boxes */
+.playersimg img {
+    width: 100%;
+    height: 100%;
+    object-fit:fill;      /* Scales the image to fill the box while preserving aspect ratio */
+}
+
+.info{
+    /* height: 100px; */
+    margin: 0;
+    padding: 0;
+    /* background-color: rgb(101, 80, 105); */
+    background-color: #1a1a2e;
+    margin-bottom: 0;
+    padding-bottom: 0;
+    color:rgb(230, 213, 213);
+}
