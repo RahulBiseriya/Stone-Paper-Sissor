@@ -14,31 +14,42 @@
     <div class="nav">
         <h1 style="text-align:center;  color: #0077B5;">Stone Paper Sissor</h1>
     </div>
-    <div class="info"> 
+    <div class="back">
+        <div class="info"> 
         <br>
         <h3 class="info"># Instructions: <br>
         1. Click on the button to select your choice. <br>
         2. The computer will also make a random choice. <br>
         3. The winner will be determined based on the rules of the game</h3>
         </div>
-       
+        <br>
+        <div class="scoreboard" style="background-color: #1a1a2e;">
+
+            <h1 style="color:#ffffff; margin-top:0; text-align:center;">Score Board</h1>
+            <br>
+            <h3 id="username" class="h3-row" style="text-align:center; color:#ffffff;">#Your Score#</h3>
+            <h3 id="comp" class="h3-row" style="color:#ffffff;">#Computer Score#</h3>
+            <br>
+            <p id="userscore" class="score">0</p>
+            <p id="compscore" class="score">0</p>
+        </div>
     <div class="main">
-        
         <div id="player1img" class="playersimg">
             <img src="stone.png" alt="">
         </div>
-        <h3 style=" color:white; background-color:#1a1a2e; border-radius:5px;">V/s</h3>
+        <h3 style=" color:white; background-color:#1a1a2e; border-radius:5px; ">V/s</h3>
         <div id="player2img" class="playersimg">
             <img src="paper.png" alt="">
         </div>
-
-        
         <!-- <img src="background.jpg" alt="backgorund image" style="width:100%; text-align:center;"> -->
+    </div></div>
+    <div class="logic">
+        <button id="stone">STONE</button><button id="paper">PAPER</button><button id="sissore">SISSORE</button>
     </div>
 
 
 
-
+<hr>
     <div class="footer">
         <div id="footer">
         <h3 id="name" style="color: white;">Made by Rahul <br>All Copyrights Reserved</h3> 
@@ -59,5 +70,7 @@
 <a href="https://github.com/RahulBiseriya" target="_blank"  style="height:40px; color: #b0b3b8; text-decoration: none;">GitHub</a>
     </div>
     </div>
+
+    <script src="main.js"></script>
 </body>
 </html>
